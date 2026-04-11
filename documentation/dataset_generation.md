@@ -153,3 +153,5 @@ Building this dataset helped me better understand how healthcare data is structu
 ## Notes
 
 All data is synthetic and created for learning purposes only. No real patient data is used.
+
+For a more detailed breakdown of the column-level logic, formulas, and design decisions used to generate this dataset, see the [Dataset Formulas Reference](dataset_formulas_reference.md).
