@@ -6,7 +6,7 @@ This project is a healthcare analytics case study focused on analyzing infection
 
 The goal is to explore how electronic medical record (EMR) style data can be used in practice to monitor disease spread, understand population risk, and support public health decision-making.
 
-This dataset is fully synthetic and was created in Excel to simulate a university health system. It does not contain any real patient data.
+This dataset is fully synthetic and was created in Excel to simulate a university health system. It does not contain any real patient data. Please see [Dataset Generation](documentation/dataset_generation.md) for more details on how the dataset was created.
 
 ---
 
@@ -159,4 +159,4 @@ The next phase of this project will focus on turning these analyses into more in
 
 ## Notes
 
-All data used in this project is synthetic and created for learning and portfolio purposes only. No real patient data is used.
+All data used in this project is synthetic and created for learning and portfolio purposes only. No real patient data is used. Please see [Dataset Generation](documentation/dataset_generation.md) for more details on how the dataset was created.
