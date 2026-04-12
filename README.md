@@ -4,7 +4,7 @@
 
 This project is a healthcare analytics case study focused on analyzing infection trends within a simulated university campus population.
 
-The goal is to explore how electronic medical record (EMR) style data can be used in practice to monitor disease spread, understand population risk, and support public health decision-making.
+The goal is to explore how electronic health record (EHR) style data can be used in practice to monitor disease spread, understand population risk, and support public health decision-making.
 
 This dataset is fully synthetic and was created in Excel to simulate a university health system. It does not contain any real patient data. Please see [Dataset Generation](documentation/dataset_generation.md) for more details on how the dataset was created.
 
@@ -36,25 +36,43 @@ To answer this, I am analyzing:
 
 ---
 
-## Current Progress (Day 1 & 2)
+## Current Progress (Day 3)
 
-So far, I’ve focused on building a clean and reliable foundation before moving into deeper analysis.
+### Visualization and Chart Refinement
 
-### 1. Data Cleaning & Validation
+Today, I focused on translating the positivity metrics into clear, interpretable visualizations. The goal was to make insights from Day 1 & 2 easy to understand at a glance.
 
-- Loaded and validated all datasets
-- Converted Excel date formats into proper datetime fields
-- Verified relationships between tables
-- Checked for missing values, duplicates, and invalid records
-- Removed mismatched patient records
+Key work done:
 
-### 2. Positivity Rate Analysis
+1. **Disease Positivity Chart**
+   - Created a horizontal bar chart showing positivity rates by disease
+   - Added data labels directly on the bars for readability
+   - Observed that Chlamydia and Gonorrhea have the highest positivity
+   - Noted unexpected patterns for respiratory diseases, likely due to broad precautionary testing
 
-- Created a positivity indicator from test results
-- Calculated positivity rates by disease
-- Compared infection patterns across population groups (students vs staff)
-- Grouped patients into age categories for demographic analysis
-- Merged datasets to analyze infection trends across demographics
+2. **Positivity by Disease and Population**
+
+   - Created a grouped bar chart showing positivity rates by disease, separated by students and staff
+   - Added data labels to each bar to make comparisons easier
+   - Noticed that STI-related diseases (Chlamydia and Gonorrhea) show higher positivity among students compared to staff
+   - For respiratory diseases like COVID-19 and Influenza, the difference between students and staff is much smaller
+   - This suggests that infection patterns may depend more on the type of disease rather than just the population group
+   - It also made me think that behavior and exposure (for example, social patterns) could play a role, especially for STIs
+
+**Age Group Positivity Chart**
+   - Built a stacked bar chart for positivity by age group and population (students vs staff)
+   - Added labels for each segment to clearly show rates
+   - Found most positive cases occur in ages 18–25 (students), while staff positivity is concentrated in older groups
+
+3. **Vaccination Status Chart**
+   - Created a bar chart for positivity by vaccination status
+   - Corrected data label placement to avoid overlapping chart borders
+   - Observed that vaccinated individuals show slightly lower positivity, but differences are small
+   - This suggests vaccination status alone may not fully explain infection risk in this dataset
+
+4. **Output**
+   - All charts were saved to the `dashboards` folder for easy access
+   - Ensured charts are clean, labeled, and ready for interactive dashboard integration
 
 ---
 
@@ -139,7 +157,7 @@ I’m transitioning into a healthcare data analytics role and wanted to build a 
 
 Instead of using a simple flat dataset, I created a multi-table system to better understand:
 
-- How EMR-style data is organized
+- How EHR-style data is organized
 - How different datasets relate to each other
 - How data quality issues impact analysis
 - How infection trends can be measured and interpreted
