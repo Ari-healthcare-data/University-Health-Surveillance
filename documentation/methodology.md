@@ -165,3 +165,38 @@ This methodology focuses on building a clear, step-by-step analytical workflow:
 Overall, this approach helped me move from raw data to interpretable insights in a structured and transparent way.
 
 The goal was not just to compute metrics, but to understand what they mean and how they would be used in a real-world setting.
+
+
+---
+---
+---
+
+## Day 3 – Visualization
+
+I used matplotlib to create visualizations that help communicate infection trends clearly and consistently.
+
+- **Positivity rate by disease** (horizontal bar chart)
+  - Added data labels to improve readability
+  - Ensured labels stay within chart boundaries for a cleaner presentation
+
+- **Positivity rate by age group and population** (stacked bar chart)
+  - Added segment-level labels to show exact values
+  - Maintained a logical ordering of age groups to support interpretation
+
+- **Positivity rate by vaccination status** (bar chart)
+  - Adjusted label placement to prevent overlap with chart edges
+  - Compared vaccinated vs unvaccinated groups to observe differences in positivity
+
+**Key focus during visualization**:
+- Making charts easy to read without needing extra explanation
+- Ensuring labels and formatting support quick interpretation
+- Keeping visual structure consistent across all charts
+
+### Observations from Visualization Phase
+
+- Visualizations confirmed earlier findings and helped highlight additional patterns:
+  - Chlamydia and Gonorrhea show the highest positivity rates
+  - Respiratory infections appear lower in positivity than expected
+  - Most positive cases are concentrated in the 18–25 age group (students)
+  - Vaccination status shows a small difference in positivity, but not a strong effect overall
+
