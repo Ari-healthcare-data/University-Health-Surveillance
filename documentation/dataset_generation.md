@@ -17,7 +17,7 @@ I intentionally designed this dataset to balance realism with simplicity.
 The goal was not to perfectly replicate real-world epidemiology, but to create a dataset that:
 - supports meaningful analysis
 - demonstrates core data analyst skills
-- reflects how healthcare data is structured in systems like EMRs
+- reflects how healthcare data is structured in systems like EHRs
 
 This approach allowed me to focus on data cleaning, validation, and analysis workflows that are directly relevant to healthcare analytics roles.
 
@@ -149,7 +149,20 @@ These are not errors, they reflect a simplified realistic population structure.
 Building this dataset helped me better understand how healthcare data is structured and the importance of designing data in a way that supports reliable analysis.
 
 ---
+---
+---
 
+## Progress (Day 3)
+
+The cleaned datasets created in Day 1 & 2 have been successfully used to generate visualizations that communicate key insights clearly:
+
+- Positivity rates by disease, age group, and vaccination status can now be visualized directly
+- Dataset structure proved sufficient for stacked, labeled, and comparative charts
+- I made small adjustments to the order of categories and cleaned up labels to make the charts easier to read and understand. These changes were done in Python using pandas and matplotlib inside the Jupyter notebook.
+
+---
+---
+---
 ## Notes
 
 All data is synthetic and created for learning purposes only. No real patient data is used.
