@@ -51,7 +51,6 @@ Key work done:
    - Noted unexpected patterns for respiratory diseases, likely due to broad precautionary testing
 
 2. **Positivity by Disease and Population**
-
    - Created a grouped bar chart showing positivity rates by disease, separated by students and staff
    - Added data labels to each bar to make comparisons easier
    - Noticed that STI-related diseases (Chlamydia and Gonorrhea) show higher positivity among students compared to staff
@@ -59,18 +58,18 @@ Key work done:
    - This suggests that infection patterns may depend more on the type of disease rather than just the population group
    - It also made me think that behavior and exposure (for example, social patterns) could play a role, especially for STIs
 
-**Age Group Positivity Chart**
+3. **Age Group Positivity Chart**
    - Built a stacked bar chart for positivity by age group and population (students vs staff)
    - Added labels for each segment to clearly show rates
    - Found most positive cases occur in ages 18–25 (students), while staff positivity is concentrated in older groups
 
-3. **Vaccination Status Chart**
+4. **Vaccination Status Chart**
    - Created a bar chart for positivity by vaccination status
    - Corrected data label placement to avoid overlapping chart borders
    - Observed that vaccinated individuals show slightly lower positivity, but differences are small
    - This suggests vaccination status alone may not fully explain infection risk in this dataset
 
-4. **Output**
+5. **Output**
    - All charts were saved to the `dashboards` folder for easy access
    - Ensured charts are clean, labeled, and ready for interactive dashboard integration
 
