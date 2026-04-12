@@ -128,3 +128,53 @@ This shift from building data to interpreting it was one of the most valuable pa
 ---
 ---
 ---
+
+# Day 3 – Visualization Phase
+
+## Summary
+
+Today I focused on turning the positivity metrics from earlier analysis into visualizations that are easier to understand at a glance. The main goal was to make trends clear, improve readability, and highlight patterns across disease types, age groups, population groups, and vaccination status.
+
+## What I Worked On
+
+- Horizontal bar chart for disease positivity
+- Bar chart for disease positivity split by population (students vs staff)
+- Stacked bar chart for positivity by age group and population
+- Bar chart for positivity by vaccination status
+- Adjusted data labels to avoid overlap with chart boundaries
+- Ensured age groups are displayed in a logical order for interpretation
+
+## Key Observations
+
+- Chlamydia and Gonorrhea show the highest positivity rates across diseases  
+- When broken down by population, Chlamydia and Gonorrhea are also higher among students compared to staff  
+- Influenza and COVID-19 (respiratory infections) and Norovirus (gastrointestinal infection) show lower positivity than initially expected  
+- Most positive cases are concentrated in the 18–25 age group, which reflects the student population  
+- Vaccinated individuals show slightly lower positivity, but the difference is very small  
+- Adding data labels made it much easier to interpret differences between groups
+
+## Challenges / Issues
+
+- Initial data label placement caused labels to extend outside chart borders, which I fixed by using alignment and small offset adjustments  
+- Ensuring stacked bar chart segments remained readable while still showing exact values  
+- Making sure age groups displayed in a logical order instead of a random sorting order  
+- Interpreting small differences in vaccination trends without over-interpreting the results  
+
+## Decisions Made
+
+- Added data labels inside bars where possible to improve readability  
+- Reordered age group categories so they follow a natural progression (younger to older)  
+- Used consistent color schemes across charts to make comparisons easier  
+- Saved all visualizations in the `dashboards` folder for future use in Tableau  
+
+## Lessons Learned
+
+- Even small formatting changes (labels, spacing, ordering) can significantly improve how easy a chart is to understand  
+- Visualizations reveal patterns more clearly than raw tables, especially for comparing groups  
+- Breaking data down by both disease and population adds an extra layer of insight that would otherwise be missed  
+- It’s important not to over-interpret small differences, especially in simulated datasets  
+
+
+---
+---
+---
