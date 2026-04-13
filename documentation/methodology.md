@@ -166,7 +166,6 @@ Overall, this approach helped me move from raw data to interpretable insights in
 
 The goal was not just to compute metrics, but to understand what they mean and how they would be used in a real-world setting.
 
-
 ---
 ---
 ---
@@ -199,4 +198,24 @@ I used matplotlib to create visualizations that help communicate infection trend
   - Respiratory infections appear lower in positivity than expected
   - Most positive cases are concentrated in the 18–25 age group (students)
   - Vaccination status shows a small difference in positivity, but not a strong effect overall
+
+---
+---
+---
+
+## Day 4 – Data Integration
+
+- Merged `tests` dataset with `patients` using `patient_id`  
+- Added new derived fields:  
+  - **`is_positive`**: Boolean flag for positive test results  
+  - **`age_group`**: Binned ages for demographic segmentation  
+  - **`vaccinated`**: Boolean flag for immunization status  
+- Verified merged dataset shape (25,103 rows × 16 columns)  
+- Inspected sample rows and categorical distributions to ensure correctness  
+
+### Observations
+
+- Merging datasets early reduces complexity in later visualizations  
+- Feature engineering in Python allows consistent flags for positivity and vaccination status  
+- Validating row counts and value distributions ensures accurate downstream analysis
 
