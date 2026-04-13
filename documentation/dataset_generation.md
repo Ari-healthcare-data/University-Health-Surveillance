@@ -152,13 +152,25 @@ Building this dataset helped me better understand how healthcare data is structu
 ---
 ---
 
-## Progress (Day 3)
+## Day 3 - Progress
 
 The cleaned datasets created in Day 1 & 2 have been successfully used to generate visualizations that communicate key insights clearly:
 
 - Positivity rates by disease, age group, and vaccination status can now be visualized directly
 - Dataset structure proved sufficient for stacked, labeled, and comparative charts
 - I made small adjustments to the order of categories and cleaned up labels to make the charts easier to read and understand. These changes were done in Python using pandas and matplotlib inside the Jupyter notebook.
+---
+---
+---
+
+## Day 4 – Final Dataset for Dashboard
+
+I have now merged the cleaned datasets to create a single, analysis-ready file for Tableau:
+
+- Patient demographics and test records are fully combined  
+- Key fields added: `is_positive`, `age_group`, `vaccinated`  
+- Dataset structure supports Tableau dashboards with minimal further transformation  
+- Validated row counts, distributions, and sample data to confirm accuracy
 
 ---
 ---
