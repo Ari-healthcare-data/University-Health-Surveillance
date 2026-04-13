@@ -36,42 +36,31 @@ To answer this, I am analyzing:
 
 ---
 
-## Current Progress (Day 3)
+## Current Progress (Day 4)
 
-### Visualization and Chart Refinement
+### Dataset Preparation for Tableau
 
-Today, I focused on translating the positivity metrics into clear, interpretable visualizations. The goal was to make insights from Day 1 & 2 easy to understand at a glance.
+Today, I focused on preparing a clean, merged dataset for Tableau dashboard analysis. This involved combining patient demographics with test data and creating key features such as positivity, age groups, and vaccination status.
 
 Key work done:
 
-1. **Disease Positivity Chart**
-   - Created a horizontal bar chart showing positivity rates by disease
-   - Added data labels directly on the bars for readability
-   - Observed that Chlamydia and Gonorrhea have the highest positivity
-   - Noted unexpected patterns for respiratory diseases, likely due to broad precautionary testing
+1. **Dataset Merging**
+   - Combined `patients` and `tests` tables using `patient_id` as the join key
+   - Verified that all rows merged correctly and handled any missing patient IDs
 
-2. **Positivity by Disease and Population**
-   - Created a grouped bar chart showing positivity rates by disease, separated by students and staff
-   - Added data labels to each bar to make comparisons easier
-   - Noticed that STI-related diseases (Chlamydia and Gonorrhea) show higher positivity among students compared to staff
-   - For respiratory diseases like COVID-19 and Influenza, the difference between students and staff is much smaller
-   - This suggests that infection patterns may depend more on the type of disease rather than just the population group
-   - It also made me think that behavior and exposure (for example, social patterns) could play a role, especially for STIs
+2. **Feature Engineering**
+   - Created `is_positive` flag for infection results
+   - Generated age groups (`18–20`, `21–25`, `26–35`, `36–50`, `51–65`)
+   - Created `vaccinated` flag for immunization status
 
-3. **Age Group Positivity Chart**
-   - Built a stacked bar chart for positivity by age group and population (students vs staff)
-   - Added labels for each segment to clearly show rates
-   - Found most positive cases occur in ages 18–25 (students), while staff positivity is concentrated in older groups
+3. **Data Validation**
+   - Printed sample rows (`df.head()`) to inspect merged dataset
+   - Checked distribution of age groups and positivity flags
+   - Confirmed final dataset shape: 25,103 rows × 16 columns
 
-4. **Vaccination Status Chart**
-   - Created a bar chart for positivity by vaccination status
-   - Corrected data label placement to avoid overlapping chart borders
-   - Observed that vaccinated individuals show slightly lower positivity, but differences are small
-   - This suggests vaccination status alone may not fully explain infection risk in this dataset
+4. **Output**
+   - Saved merged dataset as `final_dataset.csv` for Tableau dashboard use
 
-5. **Output**
-   - All charts were saved to the `dashboards` folder for easy access
-   - Ensured charts are clean, labeled, and ready for interactive dashboard integration
 
 ---
 
@@ -97,7 +86,7 @@ University-Campus-Health-Surveillance/
   - data/
   - documentation/
   - scripts/
-  - images/
+  - dashboards/
   - README.md
 ```
 
