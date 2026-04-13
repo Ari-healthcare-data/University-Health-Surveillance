@@ -174,6 +174,49 @@ Today I focused on turning the positivity metrics from earlier analysis into vis
 - Breaking data down by both disease and population adds an extra layer of insight that would otherwise be missed  
 - It’s important not to over-interpret small differences, especially in simulated datasets  
 
+---
+---
+---
+
+# Day 4 – Dataset Preparation for Tableau
+
+## Summary
+
+I focused on preparing a merged, feature-rich dataset ready for Tableau dashboard analysis. This step ensures that all metrics are accurate and visualizations can be built without additional transformations.
+
+## What I Worked On
+
+- Loaded cleaned patient and test datasets into Python (pandas)  
+- Converted test dates to proper datetime format  
+- Created derived fields: `is_positive`, `age_group`, `vaccinated`  
+- Merged datasets into a single file for Tableau  
+- Printed sample rows and inspected distributions to validate correctness  
+- Saved final dataset as `final_dataset.csv`  
+
+## Key Observations
+
+- Merged dataset contains 25,103 rows and 16 columns  
+- Most positive cases are in the 18–25 age group  
+- Age bins and vaccination flags applied consistently across the dataset  
+- Dataset is ready for direct use in Tableau dashboards  
+
+## Challenges
+
+- Ensuring derived fields (`age_group`, `vaccinated`) are correctly aligned with test records  
+- Maintaining reproducibility: all steps performed in a notebook with print statements for validation  
+
+## Decisions Made
+
+- Verified row counts and categorical distributions before saving final dataset  
+- Printed sample rows and value counts to confirm data integrity  
+- Chose to merge datasets early to simplify downstream Tableau workflow  
+
+## Lessons Learned
+
+- Early validation prevents downstream errors in dashboards  
+- Feature engineering in Python makes future visualizations easier and more reliable  
+- Printing sample rows and distributions is an effective sanity check
+
 
 ---
 ---
