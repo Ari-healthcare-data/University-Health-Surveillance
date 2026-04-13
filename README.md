@@ -154,12 +154,11 @@ Instead of using a simple flat dataset, I created a multi-table system to better
 
 ## Next Steps
 
-The next phase of this project will focus on turning these analyses into more interpretable insights:
-
-- Build more detailed visualizations of infection trends
-- Analyze trends over time (seasonality, spikes)
-- Explore relationships between vaccination status and infection rates
-- Develop a dashboard to present findings more clearly
+- Import the final dataset into Tableau  
+- Begin building interactive dashboards and visualizations  
+- Explore trends over time (seasonality, spikes)  
+- Analyze infection risk by vaccination status, age group, and population  
+- Refine visuals for stakeholder-ready dashboards
 
 ---
 
