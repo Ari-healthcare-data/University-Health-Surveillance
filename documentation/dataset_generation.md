@@ -175,6 +175,26 @@ I have now merged the cleaned datasets to create a single, analysis-ready file f
 ---
 ---
 ---
+
+## Day 5 – Dashboard Integration Reflection
+
+With the Tableau dashboard completed, it became clear that the earlier data design choices were important for making the analysis usable.
+
+Fields like:
+
+- year_month
+- age_group
+- vaccinated
+- population
+
+This made it possible for me to build the dashboard directly in Tableau without needing extra transformations.
+
+One takeaway from this stage is that most of the “BI pain” is avoided when feature engineering is done early in Python rather than pushed into Tableau.
+
+---
+---
+---
+
 ## Notes
 
 All data is synthetic and created for learning purposes only. No real patient data is used.
