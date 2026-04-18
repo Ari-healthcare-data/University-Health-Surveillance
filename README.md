@@ -36,30 +36,53 @@ To answer this, I am analyzing:
 
 ---
 
-## Current Progress (Day 4)
+## Current Progress (Day 5)
 
-### Dataset Preparation for Tableau
+### Tableau Dashboard Development
 
-Today, I focused on preparing a clean, merged dataset for Tableau dashboard analysis. This involved combining patient demographics with test data and creating key features such as positivity, age groups, and vaccination status.
+Today I moved from Python-based analysis into Tableau to build an interactive dashboard using the final dataset (`final_dataset.csv`).
+
+This step was mainly about translating the final dataset into something more exploratory and visual.
 
 Key work done:
 
-1. **Dataset Merging**
-   - Combined `patients` and `tests` tables using `patient_id` as the join key
-   - Verified that all rows merged correctly and handled any missing patient IDs
+1. **Dashboard Setup**
+   - Loaded `final_dataset.csv` into Tableau Public
+   - Verified all 21 fields were correctly imported and properly typed
+   - Resolved initial issue where Tableau preview only displayed a subset of columns (View Data vs sample view discrepancy). I verified all fields were correctly imported and properly typed
 
-2. **Feature Engineering**
-   - Created `is_positive` flag for infection results
-   - Generated age groups (`18–20`, `21–25`, `26–35`, `36–50`, `51–65`)
-   - Created `vaccinated` flag for immunization status
 
-3. **Data Validation**
-   - Printed sample rows (`df.head()`) to inspect merged dataset
-   - Checked distribution of age groups and positivity flags
-   - Confirmed final dataset shape: 25,103 rows × 16 columns
+2. **Dashboard Visuals**
+   - KPIs (total tests, positive cases, vaccination rate, positivity rate)
+   - Positivity rate by disease
+   - Positivity rate over time
+   - Positivity rate by age group and population 
+   - Positivity rate by disease and population
 
-4. **Output**
-   - Saved merged dataset as `final_dataset.csv` for Tableau dashboard use
+
+3. **Interactivity**
+   - Added filters for test date, disease, population, and vaccination status
+
+4. **Data Formatting Fixes**
+   - Fixed date formatting for the positivity rate over time (converted to readable month-year format)
+
+---
+
+### Key Insight from Dashboard Work
+
+Moving into Tableau made the patterns easier to explore visually:
+
+- Infection rates are consistently higher in younger age groups (18–25)
+- Disease type has a stronger impact on positivity than vaccination status alone
+- Monthly aggregation makes trends much easier to interpret than raw daily variation
+- Some patterns that looked minor in Python became more noticeable once filters were added
+
+---
+
+## Next Steps
+
+- Begin final portfolio presentation and executive summary refinement
+
 
 
 ---
@@ -105,6 +128,20 @@ The dataset includes:
 - ~7,000 patients
 - ~25,000 test records
 - ~10,000 vaccination records
+
+---
+
+## Dashboard
+
+The interactive dashboard for this project is available on Tableau Public:
+
+[View Tableau Dashboard]( https://public.tableau.com/app/profile/ari.m5621/viz/UniversityCampusHealthSurveillance-InfectiousDiseases/CampusInfectionTrendsDashboard)
+
+The dashboard was built to explore infection trends across disease type, age group, population, and vaccination status.
+
+### Dashboard Preview
+
+![Tableau Dashboard Preview](dashboards/dashboard_preview.png)
 
 ---
 
