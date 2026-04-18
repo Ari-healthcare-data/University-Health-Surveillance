@@ -219,3 +219,40 @@ I used matplotlib to create visualizations that help communicate infection trend
 - Feature engineering in Python allows consistent flags for positivity and vaccination status  
 - Validating row counts and value distributions ensures accurate downstream analysis
 
+---
+---
+---
+
+## Day 5 - Dashboard Development (Tableau)
+
+After completing the Python analysis, I imported the final dataset into Tableau to build the interactive dashboard.
+
+This step shifted the project from static analysis into exploratory visual analytics for me.
+
+### Dataset preparation for Tableau
+
+Before importing into Tableau, I made sure the dataset included:
+
+- A time-friendly field (year_month) for trend analysis
+- Clean categorical fields (age_group, population, vaccinated)
+- Properly formatted date and boolean fields
+- A single merged dataset ready for visualization
+
+### Dashboard objectives
+
+The goal of the Tableau dashboard was to:
+
+- Explore infection trends interactively
+- Compare positivity rates across demographic groups
+- Understand differences between vaccinated and unvaccinated populations
+- Identify time-based patterns in infection rates
+
+### Design approach
+
+The focus was intentionally simple:
+
+- Keep charts readable without explanation
+- Avoid overcrowding the dashboard
+- Prioritize filters and exploration over complexity
+- Stay consistent with insights already observed in Python
+
