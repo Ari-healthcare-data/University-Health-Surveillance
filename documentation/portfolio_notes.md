@@ -153,7 +153,7 @@ Today I focused on turning the positivity metrics from earlier analysis into vis
 - Vaccinated individuals show slightly lower positivity, but the difference is very small  
 - Adding data labels made it much easier to interpret differences between groups
 
-## Challenges / Issues
+## Challenges
 
 - Initial data label placement caused labels to extend outside chart borders, which I fixed by using alignment and small offset adjustments  
 - Ensuring stacked bar chart segments remained readable while still showing exact values  
@@ -217,7 +217,73 @@ I focused on preparing a merged, feature-rich dataset ready for Tableau dashboar
 - Feature engineering in Python makes future visualizations easier and more reliable  
 - Printing sample rows and distributions is an effective sanity check
 
+---
+---
+---
+
+# Day 5 – Tableau Dashboard Development
+
+## Summary
+
+Today I moved from Python-based analysis into Tableau to build an interactive dashboard using the final dataset.
+
+This was the first time I could actually explore the data dynamically instead of looking at static outputs, and it changed how I interpreted some of the earlier results.
 
 ---
+
+## What I Worked On
+
+- Loaded the final dataset into Tableau Public
+   - Verified all 21 fields were correctly imported and properly typed
+   - Resolved initial issue where Tableau preview only displayed a subset of columns (View Data vs sample view discrepancy). I verified all fields were correctly imported and properly typed.
+
+- Dashboard Visuals
+   - KPIs (total tests, positive cases, vaccination rate, positivity rate)
+   - Positivity rate by disease
+   - Positivity rate over time
+   - Positivity rate by age group and population 
+   - Positivity rate by disease and population
+
+-Fixed an initial issue where Tableau preview didn’t show all columns (this was just a preview limitation, not a data issue)
+- Added filters for disease, population, and vaccination status
+- Improved date formatting for time-based charts
+
 ---
+
+## Key Observations
+
+- The interactive dashboard made it easier to see how strongly age group affects infection patterns
+- Vaccination status shows a difference, but it is not as strong as demographic effects
+- Monthly aggregation makes trends easier to understand
+- Filtering the dashboard changes how patterns appear quite significantly
+
 ---
+
+## Challenges 
+
+- Tableau initially displayed fewer columns in the sample view, even though the full dataset was correctly loaded. Tableau preview initially looked like columns were missing, which was confusing at first.
+- I needed to understand the difference between sample preview vs full data load behavior in Tableau
+- Ensuring `year_month` sorted correctly in chronological order required adjusting date formatting
+- Filters initially only applied to individual sheets, required configuration to apply across all dashboard sheets
+
+---
+
+## Decisions Made
+
+- Kept the dashboard simple instead of adding too many visuals
+- Used monthly aggregation instead of quarterly trends for clarity
+- Prioritized simplicity over dense dashboards
+- Kept color consistent across all visualizations for readability
+- Focused on interactive filtering rather than adding too many charts
+
+---
+
+## Reflection
+
+This stage made the project feel more realistic.
+
+Python helped me understand what was happening in the data, but Tableau made it easier to see how someone else might explore it.
+
+The biggest takeaway for me is that:
+> The same dataset can lead to different interpretations depending on how it is explored interactively.
+
