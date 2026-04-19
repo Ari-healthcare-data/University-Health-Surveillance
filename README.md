@@ -1,5 +1,29 @@
 # University Campus Health Surveillance Project
 
+
+## Table of Contents
+
+- [Overview]( https://github.com/Ari-healthcare-data/University-Health-Surveillance/tree/main#overview)
+
+  - [Business Value](https://github.com/Ari-healthcare-data/University-Health-Surveillance/tree/main#business-value)
+
+  - [Project Structure](https://github.com/Ari-healthcare-data/University-Health-Surveillance/tree/main#project-structure)
+
+  - [Dashboard Preview]( https://github.com/Ari-healthcare-data/University-Health-Surveillance/tree/main#dashboard)
+
+  - [Why I Built This]( https://github.com/Ari-healthcare-data/University-Health-Surveillance/tree/main#why-i-built-this)
+
+- [Dataset Generation]( https://github.com/Ari-healthcare-data/University-Health-Surveillance/blob/main/documentation/dataset_generation.md#dataset-generation)
+
+- [Dataset Formulas Reference]( https://github.com/Ari-healthcare-data/University-Health-Surveillance/blob/main/documentation/dataset_formulas_reference.md#dataset-formulas-reference)
+
+- [Methodology]( https://github.com/Ari-healthcare-data/University-Health-Surveillance/blob/main/documentation/methodology.md#methodology)
+
+- [Portfolio Notes]( https://github.com/Ari-healthcare-data/University-Health-Surveillance/blob/main/documentation/portfolio_notes.md#portfolio-notes)
+
+- [Executive Summary]( https://github.com/Ari-healthcare-data/University-Health-Surveillance/blob/main/documentation/executive_summary_campus_infectious_disease_trends.md#executive-summary-campus-infectious-disease-trends-dashboard)
+
+
 ## Overview
 
 This project is a healthcare analytics case study focused on analyzing infection trends within a simulated university campus population.
@@ -33,57 +57,6 @@ To answer this, I am analyzing:
 - Infection positivity rates across diseases
 - Differences in infection patterns by age group and population
 - How demographic factors relate to infection risk
-
----
-
-## Current Progress (Day 5)
-
-### Tableau Dashboard Development
-
-Today I moved from Python-based analysis into Tableau to build an interactive dashboard using the final dataset (`final_dataset.csv`).
-
-This step was mainly about translating the final dataset into something more exploratory and visual.
-
-Key work done:
-
-1. **Dashboard Setup**
-   - Loaded `final_dataset.csv` into Tableau Public
-   - Verified all 21 fields were correctly imported and properly typed
-   - Resolved initial issue where Tableau preview only displayed a subset of columns (View Data vs sample view discrepancy). I verified all fields were correctly imported and properly typed
-
-
-2. **Dashboard Visuals**
-   - KPIs (total tests, positive cases, vaccination rate, positivity rate)
-   - Positivity rate by disease
-   - Positivity rate over time
-   - Positivity rate by age group and population 
-   - Positivity rate by disease and population
-
-
-3. **Interactivity**
-   - Added filters for test date, disease, population, and vaccination status
-
-4. **Data Formatting Fixes**
-   - Fixed date formatting for the positivity rate over time (converted to readable month-year format)
-
----
-
-### Key Insight from Dashboard Work
-
-Moving into Tableau made the patterns easier to explore visually:
-
-- Infection rates are consistently higher in younger age groups (18–25)
-- Disease type has a stronger impact on positivity than vaccination status alone
-- Monthly aggregation makes trends much easier to interpret than raw daily variation
-- Some patterns that looked minor in Python became more noticeable once filters were added
-
----
-
-## Next Steps
-
-- Begin final portfolio presentation and executive summary refinement
-
-
 
 ---
 
@@ -189,13 +162,18 @@ Instead of using a simple flat dataset, I created a multi-table system to better
 
 ---
 
-## Next Steps
+## End-to-End Workflow
 
-- Import the final dataset into Tableau  
-- Begin building interactive dashboards and visualizations  
-- Explore trends over time (seasonality, spikes)  
-- Analyze infection risk by vaccination status, age group, and population  
-- Refine visuals for stakeholder-ready dashboards
+This project follows a full analytics lifecycle:
+
+1. Dataset design (synthetic EHR-style data)
+2. Data cleaning and validation (Python)
+3. Feature engineering and metric development
+4. Exploratory analysis and visualization
+5. Interactive dashboard development (Tableau)
+6. Executive summary for stakeholder communication
+
+My goal for this project was to mirror how real-world analytics projects are done.
 
 ---
 
