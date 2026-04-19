@@ -256,3 +256,20 @@ The focus was intentionally simple:
 - Prioritize filters and exploration over complexity
 - Stay consistent with insights already observed in Python
 
+---
+---
+---
+
+## Day 6 - Executive Communication
+
+The final step was translating analytical findings into a stakeholder-facing executive summary.
+
+This required:
+- Prioritizing the most relevant insights
+- Anchoring observations to specific metrics
+- Avoiding over-interpretation of simulated data
+- Framing results in terms of real-world decision-making
+
+I learned how his step reflects how analysis is typically delivered in practice, where clear communication is just as important as technical accuracy.
+
+
