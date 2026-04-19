@@ -21,7 +21,8 @@ Prior to this work, data existed in separate systems (patient records, lab resul
 - Overall positivity rate: 3.44%
 - Vaccination coverage: 69.41%
 
-![Tableau Dashboard Preview All Diseases and All Years](dashboards/dashboard_preview.png)
+![Tableau Dashboard Preview All Diseases and All Years](../dashboards/dashboard_preview.png)
+
 Figure 1. Campus Infection Trends Dashboard showing positivity rates by disease, age group, vaccination status, and time (2019–2024).
 
 ## 3. Key Findings
