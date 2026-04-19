@@ -195,6 +195,22 @@ One takeaway from this stage is that most of the “BI pain” is avoided when f
 ---
 ---
 
+
+## Day 6 – Executive Summary Reflection
+
+Creating the executive summary highlighted how dataset design directly impacts storytelling.
+
+It was possible to translate analysis into stakeholder-facing insights without additional transformation, because the dataset was structured with:
+- clear disease categories
+- realistic positivity variation
+- demographic segmentation
+
+This reinforced the importance of designing data not just for analysis, but for communication.
+
+---
+---
+---
+
 ## Notes
 
 All data is synthetic and created for learning purposes only. No real patient data is used.
