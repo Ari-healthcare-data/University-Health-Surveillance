@@ -287,3 +287,71 @@ Python helped me understand what was happening in the data, but Tableau made it 
 The biggest takeaway for me is that:
 > The same dataset can lead to different interpretations depending on how it is explored interactively.
 
+
+---
+---
+---
+
+# Day 6 – Executive Summary & Final Presentation
+
+## Summary
+
+Today I focused on translating the dashboard insights into a formal executive summary, similar to what would be presented to stakeholders in a real-world setting.
+
+This step was less about analysis and more about communication—deciding what actually matters and how to present it clearly.
+
+---
+
+## What I Worked On
+
+- Wrote a structured executive summary (context, metrics, findings, implications)
+- Refined language to be more concise and less technical
+- Anchored insights to specific numbers (positivity rates, vaccination coverage)
+- Added dashboard screenshots to support key findings
+- Focused on making the narrative flow logically from data → insight → implication
+
+---
+
+## Key Observations
+
+- Writing for stakeholders is very different from writing in notebooks
+- Not every insight is worth including — prioritization matters
+- Being specific (e.g., including % values) makes insights more credible
+- It’s easy to over-explain; keeping things concise is harder than expected
+
+---
+
+## Challenges
+
+- Avoiding repetition between sections 
+- Deciding how much detail to include vs keep high-level
+- Making sure everything ties back to actual data (not just general statements)
+
+---
+
+## Decisions Made
+
+- Focused on 3–4 key insights instead of covering everything
+- Avoided overly technical language
+- Used approximate values (~6.7%, ~3.6%) instead of excessive precision
+
+---
+
+## Lessons Learned
+
+- Communication is a separate skill from analysis
+- Good analysis can feel weak if not presented clearly
+- Stakeholders care more about implications than methodology
+- Clear structure (Context → Findings → Implications) makes a big difference
+
+---
+
+## Reflection
+
+This step made the project feel complete.
+
+Up to this point, I was focused on getting the analysis right. Today was more about:
+
+> “If I were presenting this to a real health team, what would actually matter to them?”
+
+That shift in perspective changed how I think about data projects, not just as analysis, but as something meant to support decisions.
